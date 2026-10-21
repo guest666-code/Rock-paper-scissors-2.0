@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </radialGradient>
+
+    <!-- Glowing Orb Gradient -->
+    <radialGradient id="orbGrad" cx="35%" cy="35%" r="65%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#312e81"/>
+    </radialGradient>
+
+    <!-- Outer Ring Gradient -->
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="512" height="512" rx="100" fill="url(#bgGrad)"/>
+
+  <!-- Decorative Outer Energy Ring -->
+  <circle cx="256" cy="256" r="190" fill="none" stroke="url(#ringGrad)" stroke-width="8" stroke-dasharray="15 10" opacity="0.8" filter="url(#glow)"/>
+
+  <!-- Inner Glowing Orb -->
+  <circle cx="256" cy="256" r="140" fill="url(#orbGrad)" filter="url(#glow)"/>
+
+  <!-- Elemental Icons / Symbols Orbiting -->
+  <!-- Dragon (Top) -->
+  <text x="256" y="175" font-size="42" text-anchor="middle" dominant-baseline="central">🐉</text>
+  
+  <!-- Fire (Right) -->
+  <text x="335" y="256" font-size="38" text-anchor="middle" dominant-baseline="central">🔥</text>
+
+  <!-- Water (Bottom) -->
+  <text x="256" y="335" font-size="38" text-anchor="middle" dominant-baseline="central">💧</text>
+
+  <!-- Lightning (Left) -->
+  <text x="177" y="256" font-size="38" text-anchor="middle" dominant-baseline="central">⚡</text>
+
+  <!-- Center Energy Core Sparkle -->
+  <text x="256" y="258" font-size="28" text-anchor="middle" dominant-baseline="central">✨</text>
+</svg>

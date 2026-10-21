@@ -1,0 +1,18 @@
+{
+  "name": "Elementler Savaşı 2.0",
+  "short_name": "Element2.0",
+  "description": "20 Farklı Elementli Taş Kağıt Makas PWA Oyunu",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#6366f1",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
